@@ -16,8 +16,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrderTests", "FoodOrderTests\FoodOrderTests.csproj", "{38CA88C0-6A50-4FF3-87B3-35CCBD6D8B3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrder", "FoodOrder\FoodOrder.csproj", "{5C1290C3-7AAA-48FE-98C2-28476C53CA18}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrder.Repository", "FoodOrder.Repository\FoodOrder.Repository.csproj", "{72E5F3C6-D39B-4F73-83E8-F72C77C83C80}"
 EndProject
 Global
@@ -30,10 +28,6 @@ Global
 		{38CA88C0-6A50-4FF3-87B3-35CCBD6D8B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38CA88C0-6A50-4FF3-87B3-35CCBD6D8B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38CA88C0-6A50-4FF3-87B3-35CCBD6D8B3A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C1290C3-7AAA-48FE-98C2-28476C53CA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C1290C3-7AAA-48FE-98C2-28476C53CA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C1290C3-7AAA-48FE-98C2-28476C53CA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C1290C3-7AAA-48FE-98C2-28476C53CA18}.Release|Any CPU.Build.0 = Release|Any CPU
 		{72E5F3C6-D39B-4F73-83E8-F72C77C83C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{72E5F3C6-D39B-4F73-83E8-F72C77C83C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E5F3C6-D39B-4F73-83E8-F72C77C83C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
