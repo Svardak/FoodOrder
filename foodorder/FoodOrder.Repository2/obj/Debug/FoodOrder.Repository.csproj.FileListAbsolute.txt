@@ -1,1 +1,0 @@
-C:\Source\Foodorder\foodorder\FoodOrder.Repository\obj\Debug\FoodOrder.Repository.csprojResolveAssemblyReference.cache
