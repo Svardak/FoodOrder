@@ -1,0 +1,10 @@
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\bin\Debug\FoodOrder.Repository.dll.config
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\bin\Debug\FoodOrder.Repository.dll
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\bin\Debug\FoodOrder.Repository.pdb
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\bin\Debug\EntityFramework.dll
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\bin\Debug\EntityFramework.xml
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\obj\Debug\FoodOrder.Repository.dll
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\obj\Debug\FoodOrder.Repository.pdb
+C:\Source\Foodorder\foodorder\FoodOrder.Repository\obj\Debug\FoodOrder.Repository.csprojResolveAssemblyReference.cache
