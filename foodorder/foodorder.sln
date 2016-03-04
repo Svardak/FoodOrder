@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrderTests", "FoodOrder
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrder.Repository", "FoodOrder.Repository\FoodOrder.Repository.csproj", "{72E5F3C6-D39B-4F73-83E8-F72C77C83C80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrder.Web", "FoodOrder.Web\FoodOrder.Web.csproj", "{EE948B6E-D64D-4CCC-9226-03B00416DDF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{72E5F3C6-D39B-4F73-83E8-F72C77C83C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E5F3C6-D39B-4F73-83E8-F72C77C83C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E5F3C6-D39B-4F73-83E8-F72C77C83C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE948B6E-D64D-4CCC-9226-03B00416DDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE948B6E-D64D-4CCC-9226-03B00416DDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE948B6E-D64D-4CCC-9226-03B00416DDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE948B6E-D64D-4CCC-9226-03B00416DDF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
