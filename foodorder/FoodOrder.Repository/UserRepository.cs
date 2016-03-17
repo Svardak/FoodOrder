@@ -10,7 +10,7 @@ namespace FoodOrder.Repository
 			using (var db = new FoodOrderingContext())
 			{
 				db.Users.AddOrUpdate(user);
-				db.SaveChanges();
+				//db.SaveChanges();
 			}
 		}
 

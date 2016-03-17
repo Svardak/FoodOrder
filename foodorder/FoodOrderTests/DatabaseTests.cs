@@ -17,8 +17,6 @@ namespace FoodOrderTests
 
 			var consumptions = new List<Consumption> {consumption};
 			var order = CreateOrder(user, consumptions, date);
-			
-			AddOrUpdateOrder(order);
 
 			var storedOrder = GetOrderByUserAndDate(user, date);
 			Assert.That(storedOrder, Is.EqualTo(order));
@@ -47,8 +45,7 @@ namespace FoodOrderTests
 				Consumptions = consumptions
 			};
 
-			var orderRepository = new OrderRepository();
-			orderRepository.AddOrUpdateOrder(order);
+			AddOrUpdateOrder(order);
 			return order;
 		}
 

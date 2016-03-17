@@ -11,7 +11,7 @@ namespace FoodOrder.Repository
 			using (var db = new FoodOrderingContext())
 			{
 				db.Consumptions.AddOrUpdate(consumption);
-				db.SaveChanges();
+				//db.SaveChanges();
 			}
 		}
 

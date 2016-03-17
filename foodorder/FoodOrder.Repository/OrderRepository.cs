@@ -11,9 +11,8 @@ namespace FoodOrder.Repository
 			using (var db = new FoodOrderingContext())
 			{
 				return db.Orders.FirstOrDefault(
-						o => o.Created.Date.Equals(orderDate.Date) &&
-								o.User.Equals(user)
-						);
+						o => /*o.Created.Date == orderDate.Date &&*/
+								o.User.UserId == user.UserId);
 			}
 		}
 
