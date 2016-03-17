@@ -15,11 +15,20 @@ namespace FoodOrder.Repository
 			}
 		}
 
+		public Consumption GetConsumption(Guid consumptionId)
+		{
+			using (var db = new FoodOrderingContext())
+			{
+				return db.Consumptions.FirstOrDefault(c => c.ConsumptionId.Equals(consumptionId));
+			}
+		}
+
 		public void DeleteConsumption(Consumption consumption)
 		{
 			using (var db = new FoodOrderingContext())
 			{
-				db.Consumptions.Remove(consumption);
+				var cons = db.Consumptions.FirstOrDefault(c => c.ConsumptionId.Equals(consumption.ConsumptionId));
+				db.Consumptions.Remove(cons);
 				db.SaveChanges();
 			}
 		}

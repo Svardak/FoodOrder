@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace FoodOrder.Repository
 {
@@ -6,5 +7,6 @@ namespace FoodOrder.Repository
 	{
 		public Guid ConsumptionId { get; set; }
 		public string Description { get; set; }
+
 	}
 }

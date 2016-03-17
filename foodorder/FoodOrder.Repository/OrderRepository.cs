@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Migrations;
 using System.Linq;
 
@@ -6,13 +8,13 @@ namespace FoodOrder.Repository
 {
 	public class OrderRepository
 	{
-		public Order GetOrderByUserAndDate(User user, DateTime orderDate)
+		public Order GetOrderByUserAndDate(Guid userId, DateTime orderDate)
 		{
 			using (var db = new FoodOrderingContext())
 			{
 				return db.Orders.FirstOrDefault(
-						o => /*o.Created.Date == orderDate.Date &&*/
-								o.User.UserId == user.UserId);
+						o => DbFunctions.CreateDateTime(o.Created.Year, o.Created.Month, o.Created.Day, 0, 0, 0) == orderDate.Date &&
+						o.User.UserId == userId);
 			}
 		}
 
@@ -20,7 +22,8 @@ namespace FoodOrder.Repository
 		{
 			using (var db = new FoodOrderingContext())
 			{
-				db.Orders.Remove(order);
+				var ord = db.Orders.FirstOrDefault(o => o.OrderId.Equals(order.OrderId));
+				db.Orders.Remove(ord);
 				db.SaveChanges();
 			}
 		}

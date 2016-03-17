@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity.Migrations;
+using System.Linq;
 
 namespace FoodOrder.Repository
 {
@@ -18,8 +19,17 @@ namespace FoodOrder.Repository
 		{
 			using (var db = new FoodOrderingContext())
 			{
-				db.Users.Remove(user);
+				var usr = db.Users.FirstOrDefault(u => u.UserId.Equals(user.UserId));
+				db.Users.Remove(usr);
 				db.SaveChanges();
+			}
+		}
+
+		public User GetUser(Guid userId)
+		{
+			using (var db = new FoodOrderingContext())
+			{
+				return db.Users.FirstOrDefault(u => u.UserId.Equals(userId));
 			}
 		}
 	}

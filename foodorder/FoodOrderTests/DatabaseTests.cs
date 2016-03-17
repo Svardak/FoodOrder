@@ -19,20 +19,20 @@ namespace FoodOrderTests
 			var order = CreateOrder(user, consumptions, date);
 
 			var storedOrder = GetOrderByUserAndDate(user, date);
-			Assert.That(storedOrder, Is.EqualTo(order));
+			Assert.That(storedOrder.OrderId, Is.EqualTo(order.OrderId));
 
-			GetRidOfTheTestData(user, consumption, order);
+			CleanUpDatabaseFortest(user, consumption, order);
 		}
 
-		private static void GetRidOfTheTestData(User user, Consumption consumption, Order order)
+		private static void CleanUpDatabaseFortest(User user, Consumption consumption, Order order)
 		{
 			var userRepository = new UserRepository();
 			var consumptionRepository = new ConsumptionRepository();
 			var orderRepository = new OrderRepository();
 
-			userRepository.DeleteUser(user);
 			consumptionRepository.DeleteConsumption(consumption);
 			orderRepository.DeleteOrder(order);
+			userRepository.DeleteUser(user);
 		}
 
 		private static Order CreateOrder(User user, List<Consumption> consumptions, DateTime date)
@@ -81,7 +81,7 @@ namespace FoodOrderTests
 		private Order GetOrderByUserAndDate(User user, DateTime date)
 		{
 			var orderRepository = new OrderRepository();
-			return orderRepository.GetOrderByUserAndDate(user, date);
+			return orderRepository.GetOrderByUserAndDate(user.UserId, date);
 		}
 	}
 }
