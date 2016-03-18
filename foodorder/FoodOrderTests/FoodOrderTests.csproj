@@ -854,12 +854,6 @@
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FoodOrder.Repository\FoodOrder.Repository.csproj">
-      <Project>{72e5f3c6-d39b-4f73-83e8-f72c77c83c80}</Project>
-      <Name>FoodOrder.Repository</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
